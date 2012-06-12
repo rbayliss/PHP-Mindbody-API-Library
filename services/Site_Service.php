@@ -176,5 +176,5 @@ class Site_Service extends SoapClient {
   }
 
 }
-class_alias("Site_Service", "Site_x0020_Service");
-?>
+	class Site_x0020_Service extends Site_Service {}
+	?>

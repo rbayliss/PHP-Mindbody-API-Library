@@ -30,10 +30,10 @@ class Client_Service extends SoapClient {
                                     'Staff' => 'Staff',
                                     'Appointment' => 'Appointment',
                                     'ScheduleItem' => 'ScheduleItem',
+                                    'Unavailability' => 'Unavailability',
                                     'Availability' => 'Availability',
                                     'SessionType' => 'SessionType',
                                     'Location' => 'Location',
-                                    'Unavailability' => 'Unavailability',
                                     'AppointmentStatus' => 'AppointmentStatus',
                                     'Resource' => 'Resource',
                                     'CustomClientField' => 'CustomClientField',
@@ -417,5 +417,5 @@ class Client_Service extends SoapClient {
   }
 
 }
-class_alias("Client_Service", "Client_x0020_Service");
-?>
+	class Client_x0020_Service extends Client_Service {}
+	?>

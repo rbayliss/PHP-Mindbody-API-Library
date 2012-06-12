@@ -23,13 +23,13 @@ class Sale_Service extends SoapClient {
                                     'Staff' => 'Staff',
                                     'Appointment' => 'Appointment',
                                     'ScheduleItem' => 'ScheduleItem',
+                                    'Unavailability' => 'Unavailability',
                                     'Availability' => 'Availability',
                                     'SessionType' => 'SessionType',
                                     'ActionCode' => 'ActionCode',
                                     'Program' => 'Program',
                                     'ScheduleType' => 'ScheduleType',
                                     'Location' => 'Location',
-                                    'Unavailability' => 'Unavailability',
                                     'AppointmentStatus' => 'AppointmentStatus',
                                     'Client' => 'Client',
                                     'ClientIndex' => 'ClientIndex',
@@ -48,16 +48,16 @@ class Sale_Service extends SoapClient {
                                     'Size' => 'Size',
                                     'Color' => 'Color',
                                     'Item' => 'Item',
-                                    'Package' => 'Package',
-                                    'Service' => 'Service',
                                     'Product' => 'Product',
+                                    'Service' => 'Service',
+                                    'Package' => 'Package',
                                     'Tip' => 'Tip',
                                     'PaymentInfo' => 'PaymentInfo',
-                                    'CompInfo' => 'CompInfo',
-                                    'TrackDataInfo' => 'TrackDataInfo',
-                                    'StoredCardInfo' => 'StoredCardInfo',
                                     'DebitAccountInfo' => 'DebitAccountInfo',
+                                    'CompInfo' => 'CompInfo',
+                                    'StoredCardInfo' => 'StoredCardInfo',
                                     'CreditCardInfo' => 'CreditCardInfo',
+                                    'TrackDataInfo' => 'TrackDataInfo',
                                     'CheckoutShoppingCartResponse' => 'CheckoutShoppingCartResponse',
                                     'CheckoutShoppingCartResult' => 'CheckoutShoppingCartResult',
                                     'GetSales' => 'GetSales',
@@ -231,5 +231,5 @@ class Sale_Service extends SoapClient {
   }
 
 }
-class_alias("Sale_Service", "Sale_x0020_Service");
-?>
+	class Sale_x0020_Service extends Sale_Service {}
+	?>

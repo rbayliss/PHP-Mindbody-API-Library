@@ -97,5 +97,5 @@ class Data_Service extends SoapClient {
   }
 
 }
-class_alias("Data_Service", "Data_x0020_Service");
-?>
+	class Data_x0020_Service extends Data_Service {}
+	?>

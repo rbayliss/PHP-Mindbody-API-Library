@@ -27,9 +27,9 @@ class Finder_Service extends SoapClient {
                                     'Staff' => 'Staff',
                                     'Appointment' => 'Appointment',
                                     'ScheduleItem' => 'ScheduleItem',
+                                    'Unavailability' => 'Unavailability',
                                     'Availability' => 'Availability',
                                     'SessionType' => 'SessionType',
-                                    'Unavailability' => 'Unavailability',
                                     'AppointmentStatus' => 'AppointmentStatus',
                                     'Client' => 'Client',
                                     'ClientIndex' => 'ClientIndex',
@@ -50,21 +50,21 @@ class Finder_Service extends SoapClient {
                                     'FinderCheckoutShoppingCart' => 'FinderCheckoutShoppingCart',
                                     'FinderCheckoutShoppingCartRequest' => 'FinderCheckoutShoppingCartRequest',
                                     'PaymentInfo' => 'PaymentInfo',
-                                    'CompInfo' => 'CompInfo',
-                                    'TrackDataInfo' => 'TrackDataInfo',
-                                    'StoredCardInfo' => 'StoredCardInfo',
                                     'DebitAccountInfo' => 'DebitAccountInfo',
+                                    'CompInfo' => 'CompInfo',
+                                    'StoredCardInfo' => 'StoredCardInfo',
                                     'CreditCardInfo' => 'CreditCardInfo',
+                                    'TrackDataInfo' => 'TrackDataInfo',
                                     'FinderCheckoutShoppingCartResponse' => 'FinderCheckoutShoppingCartResponse',
                                     'FinderCheckoutShoppingCartResult' => 'FinderCheckoutShoppingCartResult',
                                     'ShoppingCart' => 'ShoppingCart',
                                     'CartItem' => 'CartItem',
                                     'Item' => 'Item',
-                                    'Package' => 'Package',
-                                    'Service' => 'Service',
                                     'Product' => 'Product',
                                     'Color' => 'Color',
                                     'Size' => 'Size',
+                                    'Service' => 'Service',
+                                    'Package' => 'Package',
                                     'Tip' => 'Tip',
                                     'Class' => 'Class',
                                     'Visit' => 'Visit',
@@ -197,5 +197,5 @@ class Finder_Service extends SoapClient {
   }
 
 }
-class_alias("Finder_Service", "Finder_x0020_Service");
-?>
+	class Finder_x0020_Service extends Finder_Service {}
+	?>

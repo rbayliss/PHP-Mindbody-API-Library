@@ -27,9 +27,9 @@ class Class_Service extends SoapClient {
                                     'Staff' => 'Staff',
                                     'Appointment' => 'Appointment',
                                     'ScheduleItem' => 'ScheduleItem',
+                                    'Unavailability' => 'Unavailability',
                                     'Availability' => 'Availability',
                                     'Location' => 'Location',
-                                    'Unavailability' => 'Unavailability',
                                     'AppointmentStatus' => 'AppointmentStatus',
                                     'Client' => 'Client',
                                     'ClientIndex' => 'ClientIndex',
@@ -288,5 +288,5 @@ class Class_Service extends SoapClient {
   }
 
 }
-class_alias("Class_Service", "Class_x0020_Service");
-?>
+	class Class_x0020_Service extends Class_Service {}
+	?>

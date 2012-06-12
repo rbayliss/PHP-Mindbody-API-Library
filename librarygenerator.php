@@ -121,8 +121,8 @@ if(!ini_get('user_agent')) ini_set('user_agent', 'Mozilla/5.0 (Macintosh; U; Int
     parent::__construct(\$wsdl, \$options);
 EOD;
 	$aliascode = <<<EOD
-class_alias("{$serviceName}", "{$oldServiceName}");
-?>
+	class {$oldServiceName} extends {$serviceName} {}
+	?>
 EOD;
 	$file = str_replace($oldServiceName, $serviceName, $file);
 	$file = str_replace("parent::__construct(\$wsdl, \$options);", $constructorcode, $file);

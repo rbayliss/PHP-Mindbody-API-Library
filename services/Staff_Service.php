@@ -35,8 +35,8 @@ class Staff_Service extends SoapClient {
                                     'ScheduleItem' => 'ScheduleItem',
                                     'Appointment' => 'Appointment',
                                     'AppointmentStatus' => 'AppointmentStatus',
-                                    'Availability' => 'Availability',
                                     'Unavailability' => 'Unavailability',
+                                    'Availability' => 'Availability',
                                     'GetStaffPermissions' => 'GetStaffPermissions',
                                     'GetStaffPermissionsRequest' => 'GetStaffPermissionsRequest',
                                     'GetStaffPermissionsResponse' => 'GetStaffPermissionsResponse',
@@ -103,5 +103,5 @@ class Staff_Service extends SoapClient {
   }
 
 }
-class_alias("Staff_Service", "Staff_x0020_Service");
-?>
+	class Staff_x0020_Service extends Staff_Service {}
+	?>
