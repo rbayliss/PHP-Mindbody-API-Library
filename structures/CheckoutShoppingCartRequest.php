@@ -7,5 +7,9 @@ class CheckoutShoppingCartRequest {
   public $InStore; // boolean
   public $PromotionCode; // string
   public $Payments; // ArrayOfPaymentInfo
+  public $SendEmail; // boolean
+  public $LocationID; // int
+  public $Image; // base64Binary
+  public $ImageFileName; // string
 }
 ?>

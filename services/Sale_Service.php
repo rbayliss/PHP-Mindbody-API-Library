@@ -23,13 +23,13 @@ class Sale_Service extends SoapClient {
                                     'Staff' => 'Staff',
                                     'Appointment' => 'Appointment',
                                     'ScheduleItem' => 'ScheduleItem',
-                                    'Unavailability' => 'Unavailability',
                                     'Availability' => 'Availability',
                                     'SessionType' => 'SessionType',
                                     'ActionCode' => 'ActionCode',
                                     'Program' => 'Program',
                                     'ScheduleType' => 'ScheduleType',
                                     'Location' => 'Location',
+                                    'Unavailability' => 'Unavailability',
                                     'AppointmentStatus' => 'AppointmentStatus',
                                     'Client' => 'Client',
                                     'ClientIndex' => 'ClientIndex',
@@ -48,16 +48,21 @@ class Sale_Service extends SoapClient {
                                     'Size' => 'Size',
                                     'Color' => 'Color',
                                     'Item' => 'Item',
-                                    'Package' => 'Package',
-                                    'Service' => 'Service',
-                                    'Product' => 'Product',
                                     'Tip' => 'Tip',
+                                    'Product' => 'Product',
+                                    'Service' => 'Service',
+                                    'Package' => 'Package',
                                     'PaymentInfo' => 'PaymentInfo',
-                                    'DebitAccountInfo' => 'DebitAccountInfo',
-                                    'CreditCardInfo' => 'CreditCardInfo',
-                                    'CompInfo' => 'CompInfo',
-                                    'StoredCardInfo' => 'StoredCardInfo',
                                     'TrackDataInfo' => 'TrackDataInfo',
+                                    'StoredCardInfo' => 'StoredCardInfo',
+                                    'CreditCardInfo' => 'CreditCardInfo',
+                                    'CustomPaymentInfo' => 'CustomPaymentInfo',
+                                    'DebitAccountInfo' => 'DebitAccountInfo',
+                                    'GiftCardInfo' => 'GiftCardInfo',
+                                    'CheckInfo' => 'CheckInfo',
+                                    'CashInfo' => 'CashInfo',
+                                    'CompInfo' => 'CompInfo',
+                                    'EncryptedTrackDataInfo' => 'EncryptedTrackDataInfo',
                                     'CheckoutShoppingCartResponse' => 'CheckoutShoppingCartResponse',
                                     'CheckoutShoppingCartResult' => 'CheckoutShoppingCartResult',
                                     'GetSales' => 'GetSales',
@@ -66,10 +71,6 @@ class Sale_Service extends SoapClient {
                                     'GetSalesResult' => 'GetSalesResult',
                                     'Sale' => 'Sale',
                                     'Payment' => 'Payment',
-                                    'GetItemPrograms' => 'GetItemPrograms',
-                                    'GetItemProgramsRequest' => 'GetItemProgramsRequest',
-                                    'GetItemProgramsResponse' => 'GetItemProgramsResponse',
-                                    'GetItemProgramsResult' => 'GetItemProgramsResult',
                                     'GetServices' => 'GetServices',
                                     'GetServicesRequest' => 'GetServicesRequest',
                                     'GetServicesResponse' => 'GetServicesResponse',
@@ -90,6 +91,14 @@ class Sale_Service extends SoapClient {
                                     'UpdateProductsRequest' => 'UpdateProductsRequest',
                                     'UpdateProductsResponse' => 'UpdateProductsResponse',
                                     'UpdateProductsResult' => 'UpdateProductsResult',
+                                    'RedeemSpaFinderWellnessCard' => 'RedeemSpaFinderWellnessCard',
+                                    'RedeemSpaFinderWellnessCardRequest' => 'RedeemSpaFinderWellnessCardRequest',
+                                    'RedeemSpaFinderWellnessCardResponse' => 'RedeemSpaFinderWellnessCardResponse',
+                                    'RedeemSpaFinderWellnessCardResult' => 'RedeemSpaFinderWellnessCardResult',
+                                    'GetCustomPaymentMethods' => 'GetCustomPaymentMethods',
+                                    'GetCustomPaymentMethodsRequest' => 'GetCustomPaymentMethodsRequest',
+                                    'GetCustomPaymentMethodsResponse' => 'GetCustomPaymentMethodsResponse',
+                                    'GetCustomPaymentMethodsResult' => 'GetCustomPaymentMethodsResult',
                                    );
 
   public function Sale_Service($wsdl = "https://api.mindbodyonline.com/0_5/SaleService.asmx?WSDL", $options = array()) {
@@ -141,20 +150,6 @@ class Sale_Service extends SoapClient {
    */
   public function GetSales(GetSales $parameters) {
     return $this->__soapCall('GetSales', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
-            'soapaction' => ''
-           )
-      );
-  }
-
-  /**
-   * Gets a list of programs that have consumer items available for sale. 
-   *
-   * @param GetItemPrograms $parameters
-   * @return GetItemProgramsResponse
-   */
-  public function GetItemPrograms(GetItemPrograms $parameters) {
-    return $this->__soapCall('GetItemPrograms', array($parameters),       array(
             'uri' => 'http://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
@@ -225,6 +220,34 @@ class Sale_Service extends SoapClient {
    */
   public function UpdateProducts(UpdateProducts $parameters) {
     return $this->__soapCall('UpdateProducts', array($parameters),       array(
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'soapaction' => ''
+           )
+      );
+  }
+
+  /**
+   * Redeem a Spa Finder Gift Card. 
+   *
+   * @param RedeemSpaFinderWellnessCard $parameters
+   * @return RedeemSpaFinderWellnessCardResponse
+   */
+  public function RedeemSpaFinderWellnessCard(RedeemSpaFinderWellnessCard $parameters) {
+    return $this->__soapCall('RedeemSpaFinderWellnessCard', array($parameters),       array(
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'soapaction' => ''
+           )
+      );
+  }
+
+  /**
+   * Gets a list of Custom Payment Methods. 
+   *
+   * @param GetCustomPaymentMethods $parameters
+   * @return GetCustomPaymentMethodsResponse
+   */
+  public function GetCustomPaymentMethods(GetCustomPaymentMethods $parameters) {
+    return $this->__soapCall('GetCustomPaymentMethods', array($parameters),       array(
             'uri' => 'http://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
