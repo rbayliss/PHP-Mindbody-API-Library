@@ -85,7 +85,7 @@ class Appointment_Service extends SoapClient {
    */
   public function GetStaffAppointments(GetStaffAppointments $parameters) {
     return $this->__soapCall('GetStaffAppointments', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -99,7 +99,7 @@ class Appointment_Service extends SoapClient {
    */
   public function AddOrUpdateAppointments(AddOrUpdateAppointments $parameters) {
     return $this->__soapCall('AddOrUpdateAppointments', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -113,7 +113,7 @@ class Appointment_Service extends SoapClient {
    */
   public function GetBookableItems(GetBookableItems $parameters) {
     return $this->__soapCall('GetBookableItems', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -127,7 +127,7 @@ class Appointment_Service extends SoapClient {
    */
   public function GetScheduleItems(GetScheduleItems $parameters) {
     return $this->__soapCall('GetScheduleItems', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -141,7 +141,7 @@ class Appointment_Service extends SoapClient {
    */
   public function AddOrUpdateAvailabilities(AddOrUpdateAvailabilities $parameters) {
     return $this->__soapCall('AddOrUpdateAvailabilities', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -155,7 +155,7 @@ class Appointment_Service extends SoapClient {
    */
   public function GetActiveSessionTimes(GetActiveSessionTimes $parameters) {
     return $this->__soapCall('GetActiveSessionTimes', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -169,7 +169,7 @@ class Appointment_Service extends SoapClient {
    */
   public function GetAppointmentOptions(GetAppointmentOptions $parameters) {
     return $this->__soapCall('GetAppointmentOptions', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );

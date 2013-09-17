@@ -68,7 +68,7 @@ class Staff_Service extends SoapClient {
    */
   public function GetStaff(GetStaff $parameters) {
     return $this->__soapCall('GetStaff', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -82,7 +82,7 @@ class Staff_Service extends SoapClient {
    */
   public function GetStaffPermissions(GetStaffPermissions $parameters) {
     return $this->__soapCall('GetStaffPermissions', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -96,7 +96,7 @@ class Staff_Service extends SoapClient {
    */
   public function AddOrUpdateStaff(AddOrUpdateStaff $parameters) {
     return $this->__soapCall('AddOrUpdateStaff', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );

@@ -48,7 +48,7 @@ class Data_Service extends SoapClient {
    */
   public function SelectDataXml(SelectDataXml $parameters) {
     return $this->__soapCall('SelectDataXml', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -62,7 +62,7 @@ class Data_Service extends SoapClient {
    */
   public function SelectDataCSV(SelectDataCSV $parameters) {
     return $this->__soapCall('SelectDataCSV', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -76,7 +76,7 @@ class Data_Service extends SoapClient {
    */
   public function SelectAggregateDataXml(SelectAggregateDataXml $parameters) {
     return $this->__soapCall('SelectAggregateDataXml', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -90,7 +90,7 @@ class Data_Service extends SoapClient {
    */
   public function SelectAggregateDataCSV(SelectAggregateDataCSV $parameters) {
     return $this->__soapCall('SelectAggregateDataCSV', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );

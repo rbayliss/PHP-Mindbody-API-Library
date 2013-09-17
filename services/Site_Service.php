@@ -67,7 +67,7 @@ class Site_Service extends SoapClient {
    */
   public function GetSites(GetSites $parameters) {
     return $this->__soapCall('GetSites', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -81,7 +81,7 @@ class Site_Service extends SoapClient {
    */
   public function GetLocations(GetLocations $parameters) {
     return $this->__soapCall('GetLocations', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -95,7 +95,7 @@ class Site_Service extends SoapClient {
    */
   public function GetActivationCode(GetActivationCode $parameters) {
     return $this->__soapCall('GetActivationCode', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -109,7 +109,7 @@ class Site_Service extends SoapClient {
    */
   public function GetPrograms(GetPrograms $parameters) {
     return $this->__soapCall('GetPrograms', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -123,7 +123,7 @@ class Site_Service extends SoapClient {
    */
   public function GetSessionTypes(GetSessionTypes $parameters) {
     return $this->__soapCall('GetSessionTypes', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -137,7 +137,7 @@ class Site_Service extends SoapClient {
    */
   public function GetResources(GetResources $parameters) {
     return $this->__soapCall('GetResources', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -151,7 +151,7 @@ class Site_Service extends SoapClient {
    */
   public function GetRelationships(GetRelationships $parameters) {
     return $this->__soapCall('GetRelationships', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );

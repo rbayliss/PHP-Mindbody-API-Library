@@ -122,7 +122,7 @@ class Sale_Service extends SoapClient {
    */
   public function GetAcceptedCardType(GetAcceptedCardType $parameters) {
     return $this->__soapCall('GetAcceptedCardType', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -136,7 +136,7 @@ class Sale_Service extends SoapClient {
    */
   public function CheckoutShoppingCart(CheckoutShoppingCart $parameters) {
     return $this->__soapCall('CheckoutShoppingCart', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -150,7 +150,7 @@ class Sale_Service extends SoapClient {
    */
   public function GetSales(GetSales $parameters) {
     return $this->__soapCall('GetSales', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -164,7 +164,7 @@ class Sale_Service extends SoapClient {
    */
   public function GetServices(GetServices $parameters) {
     return $this->__soapCall('GetServices', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -178,7 +178,7 @@ class Sale_Service extends SoapClient {
    */
   public function UpdateServices(UpdateServices $parameters) {
     return $this->__soapCall('UpdateServices', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -192,7 +192,7 @@ class Sale_Service extends SoapClient {
    */
   public function GetPackages(GetPackages $parameters) {
     return $this->__soapCall('GetPackages', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -206,7 +206,7 @@ class Sale_Service extends SoapClient {
    */
   public function GetProducts(GetProducts $parameters) {
     return $this->__soapCall('GetProducts', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -220,7 +220,7 @@ class Sale_Service extends SoapClient {
    */
   public function UpdateProducts(UpdateProducts $parameters) {
     return $this->__soapCall('UpdateProducts', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -234,7 +234,7 @@ class Sale_Service extends SoapClient {
    */
   public function RedeemSpaFinderWellnessCard(RedeemSpaFinderWellnessCard $parameters) {
     return $this->__soapCall('RedeemSpaFinderWellnessCard', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -248,7 +248,7 @@ class Sale_Service extends SoapClient {
    */
   public function GetCustomPaymentMethods(GetCustomPaymentMethods $parameters) {
     return $this->__soapCall('GetCustomPaymentMethods', array($parameters),       array(
-            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
