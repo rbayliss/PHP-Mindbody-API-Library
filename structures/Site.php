@@ -13,5 +13,6 @@ class Site {
   public $AcceptsMasterCard; // boolean
   public $AcceptsAmericanExpress; // boolean
   public $ContactEmail; // string
+  public $ESA; // boolean
 }
 ?>

@@ -45,6 +45,16 @@ class Site_Service extends SoapClient {
                                     'GetRelationshipsResponse' => 'GetRelationshipsResponse',
                                     'GetRelationshipsResult' => 'GetRelationshipsResult',
                                     'Relationship' => 'Relationship',
+                                    'GetResourceSchedule' => 'GetResourceSchedule',
+                                    'GetResourceScheduleRequest' => 'GetResourceScheduleRequest',
+                                    'GetResourceScheduleResponse' => 'GetResourceScheduleResponse',
+                                    'GetResourceScheduleResult' => 'GetResourceScheduleResult',
+                                    'ReserveResource' => 'ReserveResource',
+                                    'ReserveResourceRequest' => 'ReserveResourceRequest',
+                                    'ReserveResourceResponse' => 'ReserveResourceResponse',
+                                    'ReserveResourceResult' => 'ReserveResourceResult',
+                                    'Row' => 'Row',
+                                    'RecordSet' => 'RecordSet',
                                    );
 
   public function Site_Service($wsdl = "https://api.mindbodyonline.com/0_5/SiteService.asmx?WSDL", $options = array()) {
@@ -67,7 +77,7 @@ class Site_Service extends SoapClient {
    */
   public function GetSites(GetSites $parameters) {
     return $this->__soapCall('GetSites', array($parameters),       array(
-            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -81,7 +91,7 @@ class Site_Service extends SoapClient {
    */
   public function GetLocations(GetLocations $parameters) {
     return $this->__soapCall('GetLocations', array($parameters),       array(
-            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -95,7 +105,7 @@ class Site_Service extends SoapClient {
    */
   public function GetActivationCode(GetActivationCode $parameters) {
     return $this->__soapCall('GetActivationCode', array($parameters),       array(
-            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -109,7 +119,7 @@ class Site_Service extends SoapClient {
    */
   public function GetPrograms(GetPrograms $parameters) {
     return $this->__soapCall('GetPrograms', array($parameters),       array(
-            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -123,7 +133,7 @@ class Site_Service extends SoapClient {
    */
   public function GetSessionTypes(GetSessionTypes $parameters) {
     return $this->__soapCall('GetSessionTypes', array($parameters),       array(
-            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -137,7 +147,7 @@ class Site_Service extends SoapClient {
    */
   public function GetResources(GetResources $parameters) {
     return $this->__soapCall('GetResources', array($parameters),       array(
-            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -151,7 +161,35 @@ class Site_Service extends SoapClient {
    */
   public function GetRelationships(GetRelationships $parameters) {
     return $this->__soapCall('GetRelationships', array($parameters),       array(
-            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'soapaction' => ''
+           )
+      );
+  }
+
+  /**
+   * Gets all resources schedule. 
+   *
+   * @param GetResourceSchedule $parameters
+   * @return GetResourceScheduleResponse
+   */
+  public function GetResourceSchedule(GetResourceSchedule $parameters) {
+    return $this->__soapCall('GetResourceSchedule', array($parameters),       array(
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'soapaction' => ''
+           )
+      );
+  }
+
+  /**
+   * Reserves a resource. 
+   *
+   * @param ReserveResource $parameters
+   * @return ReserveResourceResponse
+   */
+  public function ReserveResource(ReserveResource $parameters) {
+    return $this->__soapCall('ReserveResource', array($parameters),       array(
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );

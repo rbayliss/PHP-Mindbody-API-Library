@@ -1,5 +1,5 @@
 <?php
-class Data_Service extends SoapClient {
+class DataService extends SoapClient {
 
   private static $classmap = array(
                                     'SelectDataXml' => 'SelectDataXml',
@@ -12,10 +12,16 @@ class Data_Service extends SoapClient {
                                     'SelectDataXmlResult' => 'SelectDataXmlResult',
                                     'MBResult' => 'MBResult',
                                     'StatusCode' => 'StatusCode',
+                                    'FunctionDataXml' => 'FunctionDataXml',
+                                    'FunctionDataXmlRequest' => 'FunctionDataXmlRequest',
+                                    'FunctionParam' => 'FunctionParam',
+                                    'FunctionDataXmlResponse' => 'FunctionDataXmlResponse',
                                     'SelectDataCSV' => 'SelectDataCSV',
                                     'SelectDataCSVRequest' => 'SelectDataCSVRequest',
                                     'SelectDataCSVResponse' => 'SelectDataCSVResponse',
                                     'SelectDataCSVResult' => 'SelectDataCSVResult',
+                                    'FunctionAggregateDataXml' => 'FunctionAggregateDataXml',
+                                    'FunctionAggregateDataXmlResponse' => 'FunctionAggregateDataXmlResponse',
                                     'SelectAggregateDataXml' => 'SelectAggregateDataXml',
                                     'SelectAggregateDataXmlRequest' => 'SelectAggregateDataXmlRequest',
                                     'SelectAggregateDataXmlResponse' => 'SelectAggregateDataXmlResponse',
@@ -28,15 +34,12 @@ class Data_Service extends SoapClient {
                                     'RecordSet' => 'RecordSet',
                                    );
 
-  public function Data_Service($wsdl = "https://api.mindbodyonline.com/0_5/DataService.asmx?WSDL", $options = array()) {
+  public function DataService($wsdl = "https://api.mindbodyonline.com/0_5/DataService.asmx?WSDL", $options = array()) {
     foreach(self::$classmap as $key => $value) {
       if(!isset($options['classmap'][$key])) {
         $options['classmap'][$key] = $value;
       }
     }
-    if(!ini_get('user_agent')) ini_set('user_agent', 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.19) Gecko/20110707 Firefox/3.6.19');
-    $directory = dirname(__FILE__).DIRECTORY_SEPARATOR;
-    foreach($options['classmap'] as $key => $value) if(file_exists('{$directory}../structures/{$value}.php')) include_once('{$directory}../structures/{$value}.php');
     parent::__construct($wsdl, $options);
   }
 
@@ -48,7 +51,21 @@ class Data_Service extends SoapClient {
    */
   public function SelectDataXml(SelectDataXml $parameters) {
     return $this->__soapCall('SelectDataXml', array($parameters),       array(
-            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'soapaction' => ''
+           )
+      );
+  }
+
+  /**
+   *  
+   *
+   * @param FunctionDataXml $parameters
+   * @return FunctionDataXmlResponse
+   */
+  public function FunctionDataXml(FunctionDataXml $parameters) {
+    return $this->__soapCall('FunctionDataXml', array($parameters),       array(
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -62,7 +79,21 @@ class Data_Service extends SoapClient {
    */
   public function SelectDataCSV(SelectDataCSV $parameters) {
     return $this->__soapCall('SelectDataCSV', array($parameters),       array(
-            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'soapaction' => ''
+           )
+      );
+  }
+
+  /**
+   *  
+   *
+   * @param FunctionAggregateDataXml $parameters
+   * @return FunctionAggregateDataXmlResponse
+   */
+  public function FunctionAggregateDataXml(FunctionAggregateDataXml $parameters) {
+    return $this->__soapCall('FunctionAggregateDataXml', array($parameters),       array(
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -76,7 +107,7 @@ class Data_Service extends SoapClient {
    */
   public function SelectAggregateDataXml(SelectAggregateDataXml $parameters) {
     return $this->__soapCall('SelectAggregateDataXml', array($parameters),       array(
-            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -90,12 +121,11 @@ class Data_Service extends SoapClient {
    */
   public function SelectAggregateDataCSV(SelectAggregateDataCSV $parameters) {
     return $this->__soapCall('SelectAggregateDataCSV', array($parameters),       array(
-            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
   }
 
 }
-	class Data_x0020_Service extends Data_Service {}
-	?>
+?>

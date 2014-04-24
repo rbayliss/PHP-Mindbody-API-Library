@@ -1,5 +1,6 @@
 <?php
 class CreditCardInfo {
+  public $CVV; // string
   public $Action; // ActionCode
   public $CreditCardNumber; // string
   public $Amount; // decimal

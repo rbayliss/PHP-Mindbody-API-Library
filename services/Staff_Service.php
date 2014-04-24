@@ -35,8 +35,8 @@ class Staff_Service extends SoapClient {
                                     'ScheduleItem' => 'ScheduleItem',
                                     'Appointment' => 'Appointment',
                                     'AppointmentStatus' => 'AppointmentStatus',
-                                    'Availability' => 'Availability',
                                     'Unavailability' => 'Unavailability',
+                                    'Availability' => 'Availability',
                                     'GetStaffPermissions' => 'GetStaffPermissions',
                                     'GetStaffPermissionsRequest' => 'GetStaffPermissionsRequest',
                                     'GetStaffPermissionsResponse' => 'GetStaffPermissionsResponse',
@@ -46,6 +46,10 @@ class Staff_Service extends SoapClient {
                                     'AddOrUpdateStaffRequest' => 'AddOrUpdateStaffRequest',
                                     'AddOrUpdateStaffResponse' => 'AddOrUpdateStaffResponse',
                                     'AddOrUpdateStaffResult' => 'AddOrUpdateStaffResult',
+                                    'GetStaffImgURL' => 'GetStaffImgURL',
+                                    'GetStaffImgURLRequest' => 'GetStaffImgURLRequest',
+                                    'GetStaffImgURLResponse' => 'GetStaffImgURLResponse',
+                                    'GetStaffImgURLResult' => 'GetStaffImgURLResult',
                                    );
 
   public function Staff_Service($wsdl = "https://api.mindbodyonline.com/0_5/StaffService.asmx?WSDL", $options = array()) {
@@ -68,7 +72,7 @@ class Staff_Service extends SoapClient {
    */
   public function GetStaff(GetStaff $parameters) {
     return $this->__soapCall('GetStaff', array($parameters),       array(
-            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -82,7 +86,7 @@ class Staff_Service extends SoapClient {
    */
   public function GetStaffPermissions(GetStaffPermissions $parameters) {
     return $this->__soapCall('GetStaffPermissions', array($parameters),       array(
-            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -96,7 +100,21 @@ class Staff_Service extends SoapClient {
    */
   public function AddOrUpdateStaff(AddOrUpdateStaff $parameters) {
     return $this->__soapCall('AddOrUpdateStaff', array($parameters),       array(
-            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
+            'soapaction' => ''
+           )
+      );
+  }
+
+  /**
+   * Gets a staff member's image URL if it exists. 
+   *
+   * @param GetStaffImgURL $parameters
+   * @return GetStaffImgURLResponse
+   */
+  public function GetStaffImgURL(GetStaffImgURL $parameters) {
+    return $this->__soapCall('GetStaffImgURL', array($parameters),       array(
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );

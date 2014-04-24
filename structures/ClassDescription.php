@@ -11,5 +11,6 @@ class ClassDescription {
   public $LastUpdated; // dateTime
   public $Program; // Program
   public $SessionType; // SessionType
+  public $Active; // boolean
 }
 ?>

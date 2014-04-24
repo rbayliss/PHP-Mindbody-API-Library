@@ -15,6 +15,8 @@ class ClassSchedule {
   public $DayThursday; // boolean
   public $DayFriday; // boolean
   public $DaySaturday; // boolean
+  public $AllowOpenEnrollment; // boolean
+  public $AllowDateForwardEnrollment; // boolean
   public $StartTime; // dateTime
   public $EndTime; // dateTime
   public $StartDate; // dateTime

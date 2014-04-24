@@ -27,9 +27,9 @@ class Finder_Service extends SoapClient {
                                     'Staff' => 'Staff',
                                     'Appointment' => 'Appointment',
                                     'ScheduleItem' => 'ScheduleItem',
+                                    'Unavailability' => 'Unavailability',
                                     'Availability' => 'Availability',
                                     'SessionType' => 'SessionType',
-                                    'Unavailability' => 'Unavailability',
                                     'AppointmentStatus' => 'AppointmentStatus',
                                     'Client' => 'Client',
                                     'ClientIndex' => 'ClientIndex',
@@ -53,14 +53,14 @@ class Finder_Service extends SoapClient {
                                     'PaymentInfo' => 'PaymentInfo',
                                     'TrackDataInfo' => 'TrackDataInfo',
                                     'StoredCardInfo' => 'StoredCardInfo',
-                                    'CreditCardInfo' => 'CreditCardInfo',
-                                    'CustomPaymentInfo' => 'CustomPaymentInfo',
-                                    'DebitAccountInfo' => 'DebitAccountInfo',
-                                    'GiftCardInfo' => 'GiftCardInfo',
-                                    'CheckInfo' => 'CheckInfo',
-                                    'CashInfo' => 'CashInfo',
-                                    'CompInfo' => 'CompInfo',
                                     'EncryptedTrackDataInfo' => 'EncryptedTrackDataInfo',
+                                    'CustomPaymentInfo' => 'CustomPaymentInfo',
+                                    'CashInfo' => 'CashInfo',
+                                    'GiftCardInfo' => 'GiftCardInfo',
+                                    'DebitAccountInfo' => 'DebitAccountInfo',
+                                    'CreditCardInfo' => 'CreditCardInfo',
+                                    'CheckInfo' => 'CheckInfo',
+                                    'CompInfo' => 'CompInfo',
                                     'FinderCheckoutShoppingCartResponse' => 'FinderCheckoutShoppingCartResponse',
                                     'FinderCheckoutShoppingCartResult' => 'FinderCheckoutShoppingCartResult',
                                     'ShoppingCart' => 'ShoppingCart',
@@ -111,7 +111,7 @@ class Finder_Service extends SoapClient {
    */
   public function GetClassesWithinRadius(GetClassesWithinRadius $parameters) {
     return $this->__soapCall('GetClassesWithinRadius', array($parameters),       array(
-            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -125,7 +125,7 @@ class Finder_Service extends SoapClient {
    */
   public function GetSessionTypesWithinRadius(GetSessionTypesWithinRadius $parameters) {
     return $this->__soapCall('GetSessionTypesWithinRadius', array($parameters),       array(
-            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -139,7 +139,7 @@ class Finder_Service extends SoapClient {
    */
   public function GetBusinessLocationsWithinRadius(GetBusinessLocationsWithinRadius $parameters) {
     return $this->__soapCall('GetBusinessLocationsWithinRadius', array($parameters),       array(
-            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -153,7 +153,7 @@ class Finder_Service extends SoapClient {
    */
   public function FinderCheckoutShoppingCart(FinderCheckoutShoppingCart $parameters) {
     return $this->__soapCall('FinderCheckoutShoppingCart', array($parameters),       array(
-            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -168,7 +168,7 @@ class Finder_Service extends SoapClient {
    */
   public function AddOrUpdateFinderUsers(AddOrUpdateFinderUsers $parameters) {
     return $this->__soapCall('AddOrUpdateFinderUsers', array($parameters),       array(
-            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -182,7 +182,7 @@ class Finder_Service extends SoapClient {
    */
   public function GetFinderUser(GetFinderUser $parameters) {
     return $this->__soapCall('GetFinderUser', array($parameters),       array(
-            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );
@@ -196,7 +196,7 @@ class Finder_Service extends SoapClient {
    */
   public function SendFinderUserNewPassword(SendFinderUserNewPassword $parameters) {
     return $this->__soapCall('SendFinderUserNewPassword', array($parameters),       array(
-            'uri' => 'https://clients.mindbodyonline.com/api/0_5',
+            'uri' => 'http://clients.mindbodyonline.com/api/0_5',
             'soapaction' => ''
            )
       );

@@ -1,5 +1,7 @@
 <?php
 class Appointment {
+  public $GenderPreference; // string
+  public $Duration; // int
   public $Action; // ActionCode
   public $ID; // long
   public $Status; // AppointmentStatus

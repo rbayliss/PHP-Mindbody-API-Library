@@ -7,6 +7,7 @@ class CartItem {
   public $ClassIDs; // ArrayOfInt
   public $CourseIDs; // ArrayOfLong
   public $VisitIDs; // ArrayOfLong
+  public $AppointmentIDs; // ArrayOfLong
   public $Action; // ActionCode
   public $ID; // int
   public $Quantity; // int

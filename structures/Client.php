@@ -11,6 +11,7 @@ class Client {
   public $AppointmentGenderPreference; // string
   public $Gender; // string
   public $IsCompany; // boolean
+  public $Inactive; // boolean
   public $ClientRelationships; // ArrayOfClientRelationship
   public $Reps; // ArrayOfRep
   public $CustomClientFields; // ArrayOfCustomClientField
